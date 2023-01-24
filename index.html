@@ -9,29 +9,83 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
     
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://kit-staging.fontawesome.com/6cf5f79c01.css" crossorigin="anonymous">
+    <script src="https://kit-staging.fontawesome.com/6cf5f79c01.js" crossorigin="anonymous"></script>
     
     <title>Newsroom</title>
   </head>
   <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light w-100" id="navbar">
-        <!--Nav XL-->
-        <div class="navbar-nav d-none d-xl-flex flex-grow-1 justify-content-between" id="xlNavbar">
-            <a class="navbar-brand text-black" href="#"><i class="fa-brands fa-airbnb"></i>Airbnb News</a>
-            <div class="d-none d-xl-flex flex-grow1">
-                <a class="nav-item nav-link" href="#">About us</a>
-                <a class="nav-item nav-link" href="#">Media assets</a>
-                <a class="nav-item nav-link" href="#">Product releases</a>
-                <a class="nav-item nav-link" href="#">Contact</a>
-                <a class="nav-item nav-link" href="#">Globe &gt;</a>
-                <form class="form-inline my-2 my-lg-0">
+    <nav class="navbar navbar-expand-lg navbar-light d-flex w-100" id="navbar">
+        <!--Nav Lg-->
+        <div class="pl-5 pt-2 navbar-nav d-none d-lg-flex flex-grow-1 justify-content-between" id="lgNavbar">
+            <a id="brand" class="navbar-brand d-flex text-black font-weight-bold align-items-center" href="#"><i id="logo" class="fa-brands fa-airbnb"></i> News</a>
+            <div class="d-none d-lg-flex">
+                <a id="nav-item" class="nav-item nav-link px-3" href="#">About us</a>
+                <a id="nav-item" class="nav-item nav-link px-3" href="#">Media assets</a>
+                <a id="nav-item" class="nav-item nav-link px-3" href="#">Product releases</a>
+                <a id="nav-item" class="nav-item nav-link px-3" href="#">Contact</a>
+                <div class="dropdown px-3">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-globe"></i>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">English</a>
+                    <a class="dropdown-item" href="#">Deutsch</a>
+                    <a class="dropdown-item" href="#">Español (América Latina)</a>
+                    <a class="dropdown-item" href="#">Français</a>
+                    <a class="dropdown-item" href="#">Italiano</a>
+                  </div>
+                </div>
+                <form class="form-inline pb-2">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 </form>
             </div>
         </div>
+        
+        <!--Navbar Md-->
+        <div class="pl-5 pt-2 navbar-nav d-lg-none d-flex w-100" id="mdNavbar">
+          <div class="position-absolute">
+            <a id="brand" class="navbar-brand d-flex text-black font-weight-bold align-items-center" href="#"><i id="logo" class="fa-brands fa-airbnb"></i> News</a>
+          </div>
+          <div id="toggleButton" class="position-relative text-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="true" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        
+          <div class="navbar-collapse collapse" id="navbarToggler">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-100">
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 w-100" type="search" placeholder="Search">
+              </form>
+              <div class="dropdown py-2">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-globe"></i>
+                </button>
+                <div class="dropdown-menu py-2">
+                  <a class="dropdown-item" href="#">English</a>
+                  <a class="dropdown-item" href="#">Deutsch</a>
+                  <a class="dropdown-item" href="#">Español (América Latina)</a>
+                  <a class="dropdown-item" href="#">Français</a>
+                  <a class="dropdown-item" href="#">Italiano</a>
+                </div>
+              </div>
+              <li class="nav-item active">
+                <a class="nav-link py-2" href="#">About us</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link py-2" href="#">Media Assets</a>
+              </li>
+              <li class="nav-item py-2">
+                <a class="nav-link active">Product releases</a>
+              </li>
+              <li class="nav-item py-2">
+                <a class="nav-link active">Contact</a>
+              </li>
+            </ul>
+        </div>
     </nav>
-    
+
     <hr>
 
     <!-- jQuery first, then Bootstrap JS -->

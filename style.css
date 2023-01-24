@@ -1,4 +1,23 @@
-:host, :root {
-    --fa-style-family-classic: "Font Awesome 6 Free";
-    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+#logo {
+    color: red;
+    font-size: 35px;
+}
+
+#brand {
+    font-size: 24px !important;
+    font-weight: 500 !important;
+}
+
+#navbar {
+    padding-top: 10px;
+}
+
+#lgNavbar a {
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
+
+#nav-item:hover {
+    background-color: rgba(145, 145, 145, 0.151);
 }
