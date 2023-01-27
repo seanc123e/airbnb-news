@@ -22,6 +22,7 @@
 
 #nav-item:hover {
     background-color: rgba(145, 145, 145, 0.151);
+    border-radius: .5em;
 }
 
 /*Hero Content*/
@@ -48,3 +49,9 @@
 #read-more-btn:hover {
     opacity: 70%;
 }
+
+.aspectRatioBox {
+    padding-top: calc(1 / 4 * 100%);
+    background-size: cover;
+    background-position: center;
+  }
