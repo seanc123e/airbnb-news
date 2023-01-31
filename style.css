@@ -96,6 +96,11 @@ p {
 
 .articles h3 {
     padding-top: 15px;
+    font-size: 25px;
+}
+
+.articles-sm h3 {
+    font-size: 15px;
 }
 
 /* Footer */
@@ -104,17 +109,23 @@ footer {
     background-color: #f7f7f7;
 }
 
-.footerNav h3 {
+footer h3 {
     font-size: 15px;
 }
 
-.footerNav a {
+footer a {
     font-size: 15px;
     font-weight: 300;
 }
 
-.footerNav h5 {
+footer h5 {
     font-size: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.md-column {
+    margin-top: 30px;
+}
 }
 
 .disclaimer {
